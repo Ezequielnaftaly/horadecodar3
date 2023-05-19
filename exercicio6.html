@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excercio6     </title>
+
+        
+</head>
+<script>
+
+function lerNumero(mensagem) {
+            return parseFloat(prompt(mensagem));
+        }
+        function calcularMedia() {
+
+    var nota1 = lerNumero("Digite a primeira nota:");
+    var nota2 = lerNumero("Digite a segunda nota:");
+    var media = (nota1 + nota2) / 2;
+    if(media >= 9.5) {
+        return true;
+    } else {
+        return false;
+    }
+     }
+     var alunosAprovados = 0;
+     do {
+        if (calcularMedia()) {
+            alunosArprovados++;
+        }
+        var resposta = prompt("deseja calcular a media de outro aluno? (sim/não)").toLowerCase();
+        if (resposta  !== "sim" && resposta !== "s" ) {
+            break;
+        }
+     }while (true);
+     alert("Quantidade de alunos aprovados: " + alunosAprovados);
+    </script>
+
+<body>
+    
+</body>
+</html>
